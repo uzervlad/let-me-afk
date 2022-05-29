@@ -1,9 +1,16 @@
-# Fabric Example Mod
+# Let Me Afk 
 
-## Setup
+***This mod is still WIP!***
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+Let Me Afk allows you to enter AFK mode, in which you are completely invulnerable. It also allows other players to sleep without AFK players.
 
-## License
+AFK is turned off as soon as the player moves or interacts with anything.
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+> The code contains a lot of failed attempts at disabling pushing the player. I still have no idea how to do it.
+
+## How to install
+*TODO: Maybe after I actually finish it*
+
+## How to use
+
+Type `/afk` to enter AFK mode
