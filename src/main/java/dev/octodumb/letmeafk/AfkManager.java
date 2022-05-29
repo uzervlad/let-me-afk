@@ -25,15 +25,11 @@ public final class AfkManager {
                 if(lastAfk.get(player) + AFK_COOLDOWN > new Date().getTime())
                     return false;
             afkPlayers.add(player);
-            player.getAbilities().flying = true;
-            player.getAbilities().invulnerable = true;
             player.sendMessage(new LiteralText("You are now AFK!"), false);
         }
         else {
             afkPlayers.remove(player);
             lastAfk.put(player, new Date().getTime());
-            player.getAbilities().flying = false;
-            player.getAbilities().invulnerable = false;
             LetMeAfk.LOGGER.info("Turned off AFK for {}", player);
             player.sendMessage(new LiteralText("You are no longer AFK!"), false);
         }
